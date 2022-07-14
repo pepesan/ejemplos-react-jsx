@@ -1,5 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Jedi from './componentes/Jedi';
+import Sith from './componentes/Sith';
+import Welcome from "./componentes/propiedades/Welcome";
+import Clock from "./componentes/estados/Clock";
+import BotonPulsable from "./componentes/eventos/BotonPulsable";
+import Listado from "./componentes/plantillas/Listado";
+import RepeatComponent from "./componentes/plantillas/RepeatComponent";
+
 
 function App() {
   return (
@@ -17,6 +25,13 @@ function App() {
         >
           Learn React
         </a>
+        <Jedi name="Pepe"></Jedi>
+        <Sith></Sith>
+        <Welcome name="Pepe"></Welcome>
+        <Clock></Clock>
+        <BotonPulsable></BotonPulsable>
+        <RepeatComponent></RepeatComponent>
+        <Listado></Listado>
       </header>
     </div>
   );
