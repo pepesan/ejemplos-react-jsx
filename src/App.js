@@ -6,7 +6,8 @@ import Welcome from "./componentes/propiedades/Welcome";
 import Clock from "./componentes/estados/Clock";
 import BotonPulsable from "./componentes/eventos/BotonPulsable";
 import Listado from "./componentes/plantillas/Listado";
-import RepeatComponent from "./componentes/plantillas/RepeatComponent";
+import Condicional from "./componentes/plantillas/Condicional";
+import Form01 from "./componentes/formularios/Form01";
 
 
 function App() {
@@ -30,8 +31,9 @@ function App() {
         <Welcome name="Pepe"></Welcome>
         <Clock></Clock>
         <BotonPulsable></BotonPulsable>
-        <RepeatComponent></RepeatComponent>
         <Listado></Listado>
+        <Condicional numero="2"></Condicional>
+        <Form01></Form01>
       </header>
     </div>
   );
