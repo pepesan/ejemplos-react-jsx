@@ -33,6 +33,7 @@ class FormFormik extends React.Component {
     render() {
         return (
             <div id="expenseForm">
+                <h2>Formulario con Formik</h2>
                 <Formik
                     initialValues={this.initialValues}
                     validate={values => this.validate(values)}
@@ -49,40 +50,48 @@ class FormFormik extends React.Component {
                              /* and other goodies */
                          }) => (
                             <form onSubmit={handleSubmit}>
-                                <label
-                                    htmlFor="name">Title <span>{errors.name && touched.name && errors.name}</span></label>
-                                <input type="text" id="name" name="name" placeholder="Enter expense title"
-                                       onChange={handleChange}
-                                       onBlur={handleBlur}
-                                       value={values.name}/>
+                                <div className="mb-3">
 
+                                    <label
+                                        htmlFor="name" class="form-label ">Title <span>{errors.name && touched.name && errors.name}</span></label>
+                                    <input type="text" id="name" name="name" placeholder="Enter expense title" class="form-control"
+                                           onChange={handleChange}
+                                           onBlur={handleBlur}
+                                           value={values.name}/>
+                                </div>
+                                <div className="mb-3">
                                 <label
-                                    htmlFor="amount">Amount <span>{errors.amount && touched.amount && errors.amount}</span></label>
-                                <input type="number" id="amount" name="amount" placeholder="Enter expense amount"
+                                    htmlFor="amount" class="form-label">Amount <span>{errors.amount && touched.amount && errors.amount}</span></label>
+                                <input type="number" id="amount" name="amount" placeholder="Enter expense amount" class="form-control"
                                        onChange={handleChange}
                                        onBlur={handleBlur}
                                        value={values.amount}/>
-
-                                <label htmlFor="date">Spend
+                                    <div id="errores-amount"></div>
+                                </div>
+                                <div className="mb-3">
+                                <label htmlFor="date" class="form-label">Spend
                                     Date <span>{errors.date && touched.date && errors.date}</span></label>
-                                <input type="date" id="date" name="date" placeholder="Enter date"
+                                <input type="date" id="date" name="date" placeholder="Enter date" class="form-control"
                                        onChange={handleChange}
                                        onBlur={handleBlur}
                                        value={values.date}/>
-
-                                <label
-                                    htmlFor="category">Category <span>{errors.category && touched.category && errors.category}</span></label>
-                                <select id="category" name="category"
-                                        onChange={handleChange}
-                                        onBlur={handleBlur}
-                                        value={values.category}>
-                                    <option value="">Select</option>
-                                    <option value="Food">Food</option>
-                                    <option value="Entertainment">Entertainment</option>
-                                    <option value="Academic">Academic</option>
-                                </select>
-
-                                <input type="submit" value="Submit" disabled={isSubmitting}/>
+                                </div>
+                                <div className="mb-3">
+                                    <label
+                                        htmlFor="category" class="form-label">Category <span>{errors.category && touched.category && errors.category}</span></label>
+                                    <select id="category" name="category" class="form-control"
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                            value={values.category}>
+                                        <option value="">Select</option>
+                                        <option value="Food">Food</option>
+                                        <option value="Entertainment">Entertainment</option>
+                                        <option value="Academic">Academic</option>
+                                    </select>
+                                </div>
+                                <div className="mb-3">
+                                    <input type="submit" value="Submit" class="btn btn-primary" disabled={isSubmitting}/>
+                                </div>
                             </form>
                         )
                     }
