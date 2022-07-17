@@ -8,6 +8,10 @@ import BotonPulsable from "./componentes/eventos/BotonPulsable";
 import Listado from "./componentes/plantillas/Listado";
 import Condicional from "./componentes/plantillas/Condicional";
 import Form01 from "./componentes/formularios/Form01";
+import UsoState from "./componentes/hooks/UsoState";
+import CicloVida from "./componentes/ciclovida/CicloVida";
+import UsoEffect from "./componentes/ciclovida/UsoEffect";
+import FormFormik from "./componentes/formik/FormFormik";
 
 
 function App() {
@@ -34,6 +38,10 @@ function App() {
         <Listado></Listado>
         <Condicional numero="2"></Condicional>
         <Form01></Form01>
+        <UsoState></UsoState>
+        <CicloVida></CicloVida>
+        <UsoEffect></UsoEffect>
+        <FormFormik></FormFormik>
       </header>
     </div>
   );

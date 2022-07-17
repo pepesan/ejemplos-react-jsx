@@ -8,8 +8,9 @@ class BotonPulsable extends React.Component {
         };
         this.sayHello = this.sayHello.bind(this);
     }
-    sayHello() {
-        console.log("pulsado")
+    sayHello(event) {
+        event.preventDefault();
+        console.log("pulsado");
         this.setState({ count: this.state.count + 1 })
     }
 
