@@ -53,33 +53,33 @@ class FormFormik extends React.Component {
                                 <div className="mb-3">
 
                                     <label
-                                        htmlFor="name" class="form-label ">Title <span>{errors.name && touched.name && errors.name}</span></label>
-                                    <input type="text" id="name" name="name" placeholder="Enter expense title" class="form-control"
+                                        htmlFor="name" className="form-label ">Title <span>{errors.name && touched.name && errors.name}</span></label>
+                                    <input type="text" id="name" name="name" placeholder="Enter expense title" className="form-control"
                                            onChange={handleChange}
                                            onBlur={handleBlur}
                                            value={values.name}/>
                                 </div>
                                 <div className="mb-3">
                                 <label
-                                    htmlFor="amount" class="form-label">Amount <span>{errors.amount && touched.amount && errors.amount}</span></label>
-                                <input type="number" id="amount" name="amount" placeholder="Enter expense amount" class="form-control"
+                                    htmlFor="amount" className="form-label">Amount <span>{errors.amount && touched.amount && errors.amount}</span></label>
+                                <input type="number" id="amount" name="amount" placeholder="Enter expense amount" className="form-control"
                                        onChange={handleChange}
                                        onBlur={handleBlur}
                                        value={values.amount}/>
                                     <div id="errores-amount"></div>
                                 </div>
                                 <div className="mb-3">
-                                <label htmlFor="date" class="form-label">Spend
+                                <label htmlFor="date" className="form-label">Spend
                                     Date <span>{errors.date && touched.date && errors.date}</span></label>
-                                <input type="date" id="date" name="date" placeholder="Enter date" class="form-control"
+                                <input type="date" id="date" name="date" placeholder="Enter date" className="form-control"
                                        onChange={handleChange}
                                        onBlur={handleBlur}
                                        value={values.date}/>
                                 </div>
                                 <div className="mb-3">
                                     <label
-                                        htmlFor="category" class="form-label">Category <span>{errors.category && touched.category && errors.category}</span></label>
-                                    <select id="category" name="category" class="form-control"
+                                        htmlFor="category" className="form-label">Category <span>{errors.category && touched.category && errors.category}</span></label>
+                                    <select id="category" name="category" className="form-control"
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             value={values.category}>
@@ -90,7 +90,7 @@ class FormFormik extends React.Component {
                                     </select>
                                 </div>
                                 <div className="mb-3">
-                                    <input type="submit" value="Submit" class="btn btn-primary" disabled={isSubmitting}/>
+                                    <input type="submit" value="Submit" className="btn btn-primary" disabled={isSubmitting}/>
                                 </div>
                             </form>
                         )

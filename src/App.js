@@ -13,6 +13,7 @@ import CicloVida from "./componentes/ciclovida/CicloVida";
 import UsoEffect from "./componentes/ciclovida/UsoEffect";
 import FormFormik from "./componentes/formik/FormFormik";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import EjemploUserForm from "./componentes/useForm/EjemploUseForm";
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <CicloVida></CicloVida>
         <UsoEffect></UsoEffect>
         <FormFormik></FormFormik>
+        <EjemploUserForm></EjemploUserForm>
       </header>
     </div>
   );
