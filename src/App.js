@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Jedi from './componentes/Jedi';
 import Sith from './componentes/Sith';
@@ -15,13 +14,14 @@ import FormFormik from "./componentes/formik/FormFormik";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EjemploUserForm from "./componentes/useForm/EjemploUseForm";
 import {
-  BrowserRouter,
   Routes,
   Route,
   Link
 } from "react-router-dom";
 import HomeComponent from "./componentes/Home/HomeComponent";
 import Propiedades from "./componentes/propiedades/Propiedades";
+import RutasListado from "./componentes/rutas/RutasListado";
+import RutasDetalle from "./componentes/rutas/RutasDetalle";
 
 function App() {
   return (
@@ -44,6 +44,7 @@ function App() {
           <Link to="/ciclovida">Ciclo de Vida</Link> |{" "}
           <Link to="/formik">Formik</Link> |{" "}
           <Link to="/useForm">useForm</Link> |{" "}
+          <Link to="/rutas">Rutas</Link> |{" "}
         </nav>
       </div>
       <header className="App-header">
@@ -63,6 +64,8 @@ function App() {
         <Route path="/usoEffect" element={<UsoEffect/>} />
         <Route path="/formik" element={<FormFormik/>} />
         <Route path="/useForm" element={<EjemploUserForm/>} />
+        <Route path="/rutas" element={<RutasListado/>} />
+        <Route path="/rutas/:itemId" element={<RutasDetalle />} />
       </Routes>
       </header>
     </div>
