@@ -22,6 +22,7 @@ import HomeComponent from "./componentes/Home/HomeComponent";
 import Propiedades from "./componentes/propiedades/Propiedades";
 import RutasListado from "./componentes/rutas/RutasListado";
 import RutasDetalle from "./componentes/rutas/RutasDetalle";
+import CargaDatos from "./componentes/httprequest/CargaDatos";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Link to="/formik">Formik</Link> |{" "}
           <Link to="/useForm">useForm</Link> |{" "}
           <Link to="/rutas">Rutas</Link> |{" "}
+          <Link to="/httprequest">HttpRequest</Link> |{" "}
         </nav>
       </div>
       <header className="App-header">
@@ -66,6 +68,7 @@ function App() {
         <Route path="/useForm" element={<EjemploUserForm/>} />
         <Route path="/rutas" element={<RutasListado/>} />
         <Route path="/rutas/:itemId" element={<RutasDetalle />} />
+        <Route path="/httprequest" element={<CargaDatos/>} />
       </Routes>
       </header>
     </div>
