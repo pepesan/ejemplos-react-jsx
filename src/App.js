@@ -23,6 +23,7 @@ import Propiedades from "./componentes/propiedades/Propiedades";
 import RutasListado from "./componentes/rutas/RutasListado";
 import RutasDetalle from "./componentes/rutas/RutasDetalle";
 import CargaDatos from "./componentes/httprequest/CargaDatos";
+import {Counter} from "./componentes/redux/Counter";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Link to="/useForm">useForm</Link> |{" "}
           <Link to="/rutas">Rutas</Link> |{" "}
           <Link to="/httprequest">HttpRequest</Link> |{" "}
+          <Link to="/redux">Redux</Link> |{" "}
         </nav>
       </div>
       <header className="App-header">
@@ -69,6 +71,7 @@ function App() {
         <Route path="/rutas" element={<RutasListado/>} />
         <Route path="/rutas/:itemId" element={<RutasDetalle />} />
         <Route path="/httprequest" element={<CargaDatos/>} />
+        <Route path="/redux" element={<Counter/>} />
       </Routes>
       </header>
     </div>
