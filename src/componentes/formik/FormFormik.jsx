@@ -2,7 +2,6 @@ import React from 'react';
 import { Formik } from 'formik';
 
 class FormFormik extends React.Component {
-    formik;
 
     constructor(props) {
         super(props);
