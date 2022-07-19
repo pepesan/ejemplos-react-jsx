@@ -5,6 +5,7 @@ class CargaDatos extends React.Component {
     constructor(props) {
         super(props);
         this.state = {datos: []};
+        //this.recarga();
     }
     recarga = () =>{ // Llamamos a Axios para hacer la petición web get a la dirección URL
         axios.get(`https://cursosdedesarrollo.com/pactometro/resultados.json`)
