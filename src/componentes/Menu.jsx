@@ -28,6 +28,7 @@ class Menu extends React.Component {
                 <Link to="/httprequest">HttpRequest</Link> |{" "}
                 <Link to="/redux">Redux</Link> |{" "}
                 <Link to="/context">Context</Link> |{" "}
+                <Link to="/react-bootstrap">React Bootstrap</Link> |{" "}
             </nav>
         );
     }

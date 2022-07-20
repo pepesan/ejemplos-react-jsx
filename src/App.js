@@ -32,6 +32,7 @@ import Menu from "./componentes/Menu";
 import CamposFormulario from "./componentes/eventos/CamposFormulario";
 import Form02 from "./componentes/formularios/Form02";
 import MasEstados from "./componentes/estados/MasEstados";
+import MiPruebaReactBoostrap from "./componentes/react-bootstrap/MiPruebaReactBootstrap";
 
 function App() {
   return (
@@ -66,8 +67,12 @@ function App() {
           <Route path="/httprequest" element={<CargaDatos/>} />
           <Route path="/redux" element={<Counter/>} />
           <Route path="/context" element={<UserProvider value="Pepesan">
+
+
             <User/>
           </UserProvider>} />
+          <Route path="/react-bootstrap" element={<MiPruebaReactBoostrap/>} />
+          react-bootstrap
         </Routes>
 
         </header>
