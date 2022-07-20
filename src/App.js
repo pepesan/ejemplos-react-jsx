@@ -30,6 +30,7 @@ import User from "./componentes/contexto/User";
 import UserProvider from "./componentes/contexto/UserContext";
 import Menu from "./componentes/Menu";
 import CamposFormulario from "./componentes/eventos/CamposFormulario";
+import Form02 from "./componentes/formularios/Form02";
 
 function App() {
   return (
@@ -52,9 +53,10 @@ function App() {
           <Route path="/listado" element={<Listado/>} />
           <Route path="/condicional" element={<Condicional numero="2"></Condicional>} />
           <Route path="/formulario" element={<div><Form01/></div>} />
+          <Route path="/formulario2" element={<div><Form02/></div>} />
           <Route path="/usoState" element={<UsoState/>} />
-          <Route path="/ciclovida" element={<CicloVida/>} />
           <Route path="/usoEffect" element={<UsoEffect/>} />
+          <Route path="/ciclovida" element={<CicloVida/>} />
           <Route path="/formik" element={<FormFormik/>} />
           <Route path="/useForm" element={<EjemploUserForm/>} />
           <Route path="/rutas" element={<RutasListado/>} />

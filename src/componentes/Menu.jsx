@@ -17,6 +17,7 @@ class Menu extends React.Component {
                 <Link to="/listado">Listado</Link> |{" "}
                 <Link to="/condicional">Condicional</Link> |{" "}
                 <Link to="/formulario">Formulario</Link> |{" "}
+                <Link to="/formulario2">Formulario 2</Link> |{" "}
                 <Link to="/usoState">useState</Link> |{" "}
                 <Link to="/usoEffect">useEffect</Link> |{" "}
                 <Link to="/ciclovida">Ciclo de Vida</Link> |{" "}
