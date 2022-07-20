@@ -31,6 +31,7 @@ import UserProvider from "./componentes/contexto/UserContext";
 import Menu from "./componentes/Menu";
 import CamposFormulario from "./componentes/eventos/CamposFormulario";
 import Form02 from "./componentes/formularios/Form02";
+import MasEstados from "./componentes/estados/MasEstados";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="/welcome" element={<Welcome/>} />
           <Route path="/propiedades" element={<Propiedades name="Juan"/>} />
           <Route path="/estados" element={<Clock/>} />
+          <Route path="/masestados" element={<MasEstados/>} />
           <Route path="/eventos" element={<BotonPulsable contador="2"/>} />
           <Route path="/eventoscampos" element={<CamposFormulario/>} />
           <Route path="/eventosfuncion" element={<EventoFuncion/>} />

@@ -11,6 +11,7 @@ class Menu extends React.Component {
                 <Link to="/welcome">Welcome</Link> |{" "}
                 <Link to="/propiedades">Propiedades</Link> |{" "}
                 <Link to="/estados">Estados</Link> |{" "}
+                <Link to="/masestados">Mas Estados</Link> |{" "}
                 <Link to="/eventos">Eventos</Link> |{" "}
                 <Link to="/eventoscampos">Eventos Campos</Link> |{" "}
                 <Link to="/eventosfuncion">Eventos Funcion</Link> |{" "}
