@@ -1,5 +1,6 @@
 import React from 'react';
 import { Formik } from 'formik';
+import './FormFormik.css';
 
 class FormFormik extends React.Component {
 
@@ -52,32 +53,38 @@ class FormFormik extends React.Component {
                                 <div className="mb-3">
 
                                     <label
-                                        htmlFor="name" className="form-label ">Title <span>{errors.name && touched.name && errors.name}</span></label>
+                                        htmlFor="name" className="form-label ">
+                                        Title
+                                    </label>
                                     <input type="text" id="name" name="name" placeholder="Enter expense title" className="form-control"
                                            onChange={handleChange}
                                            onBlur={handleBlur}
                                            value={values.name}/>
+                                    <div className="input-error"><span>{errors.name && touched.name && errors.name}</span></div>
                                 </div>
                                 <div className="mb-3">
                                 <label
-                                    htmlFor="amount" className="form-label">Amount <span>{errors.amount && touched.amount && errors.amount}</span></label>
+                                    htmlFor="amount" className="form-label">Amount </label>
                                 <input type="number" id="amount" name="amount" placeholder="Enter expense amount" className="form-control"
                                        onChange={handleChange}
                                        onBlur={handleBlur}
                                        value={values.amount}/>
-                                    <div id="errores-amount"></div>
+                                <div className="input-error"><span>{errors.amount && touched.amount && errors.amount}</span></div>
                                 </div>
                                 <div className="mb-3">
-                                <label htmlFor="date" className="form-label">Spend
-                                    Date <span>{errors.date && touched.date && errors.date}</span></label>
-                                <input type="date" id="date" name="date" placeholder="Enter date" className="form-control"
-                                       onChange={handleChange}
-                                       onBlur={handleBlur}
-                                       value={values.date}/>
+                                    <label htmlFor="date" className="form-label">Spend
+                                        Date </label>
+                                    <input type="date" id="date" name="date" placeholder="Enter date" className="form-control"
+                                           onChange={handleChange}
+                                           onBlur={handleBlur}
+                                           value={values.date}/>
+                                    <div className="input-error">
+                                        <span>{errors.date && touched.date && errors.date}</span>
+                                    </div>
                                 </div>
                                 <div className="mb-3">
                                     <label
-                                        htmlFor="category" className="form-label">Category <span>{errors.category && touched.category && errors.category}</span></label>
+                                        htmlFor="category" className="form-label">Category </label>
                                     <select id="category" name="category" className="form-control"
                                             onChange={handleChange}
                                             onBlur={handleBlur}
@@ -87,6 +94,7 @@ class FormFormik extends React.Component {
                                         <option value="Entertainment">Entertainment</option>
                                         <option value="Academic">Academic</option>
                                     </select>
+                                    <div className="input-error"><span>{errors.category && touched.category && errors.category}</span></div>
                                 </div>
                                 <div className="mb-3">
                                     <input type="submit" value="Submit" className="btn btn-primary" disabled={isSubmitting}/>

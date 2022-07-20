@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import "./EjemploUseForm.css";
 function EjemploUserForm() {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
@@ -17,7 +18,7 @@ function EjemploUserForm() {
                     {/* include validation with required or other standard HTML validation rules */}
                     <input id="exampleRequired" className="form-control" {...register("exampleRequired", { required: true })} />
                     {/* errors will return when field validation fails  */}
-                    {errors.exampleRequired && <span>This field is required</span>}
+                    {errors.exampleRequired && <div className="input-error"><span>This field is required</span></div>}
                 </div>
                 <div className="mb-3 form-group">
                     <input type="submit" />
