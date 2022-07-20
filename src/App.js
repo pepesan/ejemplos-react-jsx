@@ -15,8 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import EjemploUserForm from "./componentes/useForm/EjemploUseForm";
 import {
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import HomeComponent from "./componentes/Home/HomeComponent";
 import Propiedades from "./componentes/propiedades/Propiedades";
@@ -28,6 +27,7 @@ import React from 'react';
 import User from "./componentes/contexto/User";
 import UserProvider from "./componentes/contexto/UserContext";
 import Menu from "./componentes/Menu";
+import CamposFormulario from "./componentes/eventos/CamposFormulario";
 function App() {
   return (
     <div className="App">
@@ -44,6 +44,7 @@ function App() {
           <Route path="/propiedades" element={<Propiedades name="Juan"/>} />
           <Route path="/estados" element={<Clock/>} />
           <Route path="/eventos" element={<BotonPulsable contador="2"/>} />
+          <Route path="/eventoscampos" element={<CamposFormulario/>} />
           <Route path="/listado" element={<Listado/>} />
           <Route path="/condicional" element={<Condicional numero="2"></Condicional>} />
           <Route path="/formulario" element={<Form01/>} />
