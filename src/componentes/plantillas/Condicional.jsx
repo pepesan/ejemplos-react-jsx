@@ -9,7 +9,11 @@ class Condicional extends React.Component {
                 </div>
             );
         } else {
-            return null;
+            return (
+                <div>
+                    <h2>No es par !</h2>
+                </div>
+            );
         }
     }
 }

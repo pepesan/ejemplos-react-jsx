@@ -21,12 +21,28 @@ class RepeatComponent extends React.Component {
     render() {
         return (
             <div>
-                {this.state.datos.map((item) =>
-                    <article key={item.id}>
-                        <h3>{item.title}</h3>
-                        <p>{item.content}</p>
-                    </article>
-                )}
+                <ul>
+                    {this.state.datos.map((item) =>
+                        <li key={item.id}>
+                            <h3>{item.title}</h3>
+                            <p>{item.content}</p>
+                        </li>
+                    )}
+                </ul>
+                <table>
+                    <tr>
+                        <th>Título</th>
+                        <th>Contenido</th>
+                        <th>Operaciones</th>
+                    </tr>
+                    {this.state.datos.map((item) =>
+                        <tr key={item.id}>
+                            <td>{item.title}</td>
+                            <td>{item.content}</td>
+                            <td><a href={`/rutas/${item.id}`}>Show</a> </td>
+                        </tr>
+                    )}
+                </table>
             </div>
         );
     }

@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
         <div>
-          <h1>Home</h1>
+          <h1>React App</h1>
           <Menu></Menu>
         </div>
         <header className="App-header">
@@ -43,7 +43,7 @@ function App() {
           <Route path="/welcome" element={<Welcome/>} />
           <Route path="/propiedades" element={<Propiedades name="Juan"/>} />
           <Route path="/estados" element={<Clock/>} />
-          <Route path="/eventos" element={<BotonPulsable/>} />
+          <Route path="/eventos" element={<BotonPulsable contador="2"/>} />
           <Route path="/listado" element={<Listado/>} />
           <Route path="/condicional" element={<Condicional numero="2"></Condicional>} />
           <Route path="/formulario" element={<Form01/>} />
