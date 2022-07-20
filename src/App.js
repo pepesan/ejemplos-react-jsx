@@ -4,9 +4,11 @@ import Sith from './componentes/Sith';
 import Welcome from "./componentes/propiedades/Welcome";
 import Clock from "./componentes/estados/Clock";
 import BotonPulsable from "./componentes/eventos/BotonPulsable";
+
 import Listado from "./componentes/plantillas/Listado";
 import Condicional from "./componentes/plantillas/Condicional";
 import Form01 from "./componentes/formularios/Form01";
+import EventoFuncion from "./componentes/eventos/EventoFuncion";
 import UsoState from "./componentes/hooks/UsoState";
 import CicloVida from "./componentes/ciclovida/CicloVida";
 import UsoEffect from "./componentes/ciclovida/UsoEffect";
@@ -28,6 +30,7 @@ import User from "./componentes/contexto/User";
 import UserProvider from "./componentes/contexto/UserContext";
 import Menu from "./componentes/Menu";
 import CamposFormulario from "./componentes/eventos/CamposFormulario";
+
 function App() {
   return (
     <div className="App">
@@ -45,9 +48,10 @@ function App() {
           <Route path="/estados" element={<Clock/>} />
           <Route path="/eventos" element={<BotonPulsable contador="2"/>} />
           <Route path="/eventoscampos" element={<CamposFormulario/>} />
+          <Route path="/eventosfuncion" element={<EventoFuncion/>} />
           <Route path="/listado" element={<Listado/>} />
           <Route path="/condicional" element={<Condicional numero="2"></Condicional>} />
-          <Route path="/formulario" element={<Form01/>} />
+          <Route path="/formulario" element={<div><Form01/></div>} />
           <Route path="/usoState" element={<UsoState/>} />
           <Route path="/ciclovida" element={<CicloVida/>} />
           <Route path="/usoEffect" element={<UsoEffect/>} />
