@@ -56,7 +56,8 @@ class FormFormik extends React.Component {
                                         htmlFor="name" className="form-label ">
                                         Title
                                     </label>
-                                    <input type="text" id="name" name="name" placeholder="Enter expense title" className="form-control"
+                                    <input type="text" id="name" name="name" placeholder="Enter expense title"
+                                           className="form-control"
                                            onChange={handleChange}
                                            onBlur={handleBlur}
                                            value={values.name}/>

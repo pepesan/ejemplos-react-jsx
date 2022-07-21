@@ -33,6 +33,7 @@ import CamposFormulario from "./componentes/eventos/CamposFormulario";
 import Form02 from "./componentes/formularios/Form02";
 import MasEstados from "./componentes/estados/MasEstados";
 import MiPruebaReactBoostrap from "./componentes/react-bootstrap/MiPruebaReactBootstrap";
+import FormFormikV2 from "./componentes/formik/FormFormikV2";
 
 function App() {
   return (
@@ -61,6 +62,7 @@ function App() {
           <Route path="/usoEffect" element={<UsoEffect/>} />
           <Route path="/ciclovida" element={<CicloVida/>} />
           <Route path="/formik" element={<FormFormik/>} />
+          <Route path="/formikv2" element={<FormFormikV2/>} />
           <Route path="/useForm" element={<EjemploUserForm/>} />
           <Route path="/rutas" element={<RutasListado/>} />
           <Route path="/rutas/:itemId" element={<RutasDetalle />} />

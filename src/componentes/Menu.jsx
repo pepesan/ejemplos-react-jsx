@@ -23,6 +23,7 @@ class Menu extends React.Component {
                 <Link to="/usoEffect">useEffect</Link> |{" "}
                 <Link to="/ciclovida">Ciclo de Vida</Link> |{" "}
                 <Link to="/formik">Formik</Link> |{" "}
+                <Link to="/formikv2">Formik v2</Link> |{" "}
                 <Link to="/useForm">useForm</Link> |{" "}
                 <Link to="/rutas">Rutas</Link> |{" "}
                 <Link to="/httprequest">HttpRequest</Link> |{" "}
