@@ -21,15 +21,20 @@ class RutasListado extends React.Component {
     }
     render() {
         return (
-            <ul>
-                {this.state.datos.map((item) =>
-                    <li key={item.id}>
-                        <h3>{item.title}</h3>
-                        <p>{item.content}</p>
-                        <p><Link to={`/rutas/${item.id}`}>Ver</Link></p>
-                    </li>
-                )}
-            </ul>
+            <div>
+                <h2><Link to={`/rutas/add`}>Add</Link>
+                </h2>
+                <ul>
+                    {this.state.datos.map((item) =>
+                        <li key={item.id}>
+                            <h3>{item.title}</h3>
+                            <p>{item.content}</p>
+                            <p><Link to={`/rutas/${item.id}`}>Ver</Link></p>
+                        </li>
+                    )}
+                </ul>
+            </div>
+
         );
     }
 }

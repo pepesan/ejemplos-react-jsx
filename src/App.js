@@ -34,6 +34,7 @@ import Form02 from "./componentes/formularios/Form02";
 import MasEstados from "./componentes/estados/MasEstados";
 import MiPruebaReactBoostrap from "./componentes/react-bootstrap/MiPruebaReactBootstrap";
 import FormFormikV2 from "./componentes/formik/FormFormikV2";
+import RutasForm from "./componentes/rutas/RutasForm";
 
 function App() {
   return (
@@ -66,6 +67,8 @@ function App() {
           <Route path="/useForm" element={<EjemploUserForm/>} />
           <Route path="/rutas" element={<RutasListado/>} />
           <Route path="/rutas/:itemId" element={<RutasDetalle />} />
+          <Route path="/rutas/add" element={<RutasForm />} />
+
           <Route path="/httprequest" element={<CargaDatos/>} />
           <Route path="/redux" element={<Counter/>} />
           <Route path="/context" element={<UserProvider value="Pepesan">
