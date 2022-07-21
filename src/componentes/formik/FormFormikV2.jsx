@@ -1,46 +1,39 @@
 import React from 'react';
 import './FormFormikV2.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
+const SignupSchema = Yup.object().shape({
 
-
+    email:
+        Yup
+            .string()
+            .email('Hay que introducir un email válido')
+            .required('Este campo es obligatorio'),
+    password:
+        Yup
+            .string()
+            .required("Este campo es obligatorio")
+            .min(6, "Debe tener al menos 6 caracteres")
+            .max(20, "debe tener menos de 20 caracteres")
+});
 const FormFormikV2 = () => (
 
     <div>
 
         <h1>Any place in your app!</h1>
 
-        <Formik
+            <Formik
 
             initialValues={{ email: '', password: '' }}
 
-            validate={values => {
-
-                const errors = {};
-
-                if (!values.email) {
-
-                    errors.email = 'Required';
-
-                } else if (
-
-                    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-
-                ) {
-
-                    errors.email = 'Invalid email address';
-
-                }
-
-                return errors;
-
-            }}
+            validationSchema={SignupSchema}
 
             onSubmit={(values, { setSubmitting }) => {
 
                 setTimeout(() => {
 
-                    alert(JSON.stringify(values, null, 2));
+                    console.log(JSON.stringify(values, null, 2));
 
                     setSubmitting(false);
 
@@ -54,7 +47,7 @@ const FormFormikV2 = () => (
 
                 <Form>
                     <div className="mb-3">
-                        <label htmlFor="email" className="form-label"> Email </label>
+                        <label htmlFor="email" className="form-label"> Email * </label>
                         <Field id="email"  type="email" name="email"   className="form-control"/>
 
                         <ErrorMessage className="input-error" name="email" component="div" />

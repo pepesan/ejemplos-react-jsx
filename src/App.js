@@ -13,7 +13,7 @@ import UsoState from "./componentes/hooks/UsoState";
 import CicloVida from "./componentes/ciclovida/CicloVida";
 import UsoEffect from "./componentes/ciclovida/UsoEffect";
 import FormFormik from "./componentes/formik/FormFormik";
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import EjemploUserForm from "./componentes/useForm/EjemploUseForm";
 import {
   Routes,
