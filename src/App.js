@@ -35,6 +35,7 @@ import MasEstados from "./componentes/estados/MasEstados";
 import MiPruebaReactBoostrap from "./componentes/react-bootstrap/MiPruebaReactBootstrap";
 import FormFormikV2 from "./componentes/formik/FormFormikV2";
 import RutasForm from "./componentes/rutas/RutasForm";
+import {ViewCounter} from "./componentes/redux/ViewCounter";
 
 function App() {
   return (
@@ -70,7 +71,7 @@ function App() {
           <Route path="/rutas/add" element={<RutasForm />} />
 
           <Route path="/httprequest" element={<CargaDatos/>} />
-          <Route path="/redux" element={<Counter/>} />
+          <Route path="/redux" element={<div><Counter/><ViewCounter/></div>} />
           <Route path="/context" element={<UserProvider value="Pepesan">
 
 

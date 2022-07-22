@@ -8,6 +8,7 @@ export function Counter() {
 
     return (
         <div>
+            <h2>Counter Component</h2>
             <div>
                 <button
                     aria-label="Increment value"

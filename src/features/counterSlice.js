@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 export const counterSlice = createSlice({
     name: 'counter',
     initialState: {
-        value: 0,
+        value: 0
     },
     reducers: {
         increment: (state) => {
@@ -17,6 +17,7 @@ export const counterSlice = createSlice({
             state.value -= 1
         },
         incrementByAmount: (state, action) => {
+            // comprobar si el payload es un número
             state.value += action.payload
         },
     },
